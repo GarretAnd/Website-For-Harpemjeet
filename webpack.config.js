@@ -33,6 +33,14 @@ module.exports = {
         enforce: 'pre',
       },
       {
+        test: /\.(jpe?g|png|gif)$/,
+        loader: 'url-loader',
+        options: {
+          // Images larger than 10 KB won’t be inlined
+          limit: 10 * 1024,
+        },
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
