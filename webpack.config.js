@@ -24,15 +24,7 @@ module.exports = {
           { loader: 'eslint-loader' },
         ],
       },
-      {
-        test: /\.(jpg|png|gif|svg)$/,
-        loader: 'image-webpack-loader',
-        // Specify enforce: 'pre' to apply the loader
-        // before url-loader/svg-url-loader
-        // and not duplicate it in rules with them
-        enforce: 'pre',
-      },
-      {
+      { // Found these three dependencies at: https://iamakulov.com/notes/optimize-images-webpack/
         test: /\.(jpe?g|png|gif)$/,
         loader: 'url-loader',
         options: {
@@ -41,6 +33,25 @@ module.exports = {
         },
       },
       {
+        test: /\.svg$/, // Worked in collaboration with Jared Cole to get it up and running.
+        loader: 'svg-url-loader',
+        options: {
+          // Images larger than 10 KB won’t be inlined
+          limit: 10 * 1024,
+          // Remove quotes around the encoded URL –
+          // they’re rarely useful
+          noquotes: true,
+        },
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'image-webpack-loader',
+        // Specify enforce: 'pre' to apply the loader
+        // before url-loader/svg-url-loader
+        // and not duplicate it in rules with them
+        enforce: 'pre',
+      },
+      /* {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
@@ -51,7 +62,7 @@ module.exports = {
             },
           },
         ],
-      },
+      }, */
       {
         test: /\.s?css/,
         use: [
