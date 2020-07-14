@@ -10,6 +10,6 @@ Implemented a more robust image loading than just file-loader. Worked with Jared
 Ended up using this article [Article](https://iamakulov.com/notes/optimize-images-webpack/) to compress the image.  
 Proof of this can be shown in the following two photos.
 
-File started off at 141 KB then shrunk down to 80 Bytes on the page.  
+File started off at 171 KB then shrunk down to 80 Bytes on the page.  
 <img src="src\ss\compproof.PNG">  
 <img src="src\ss\press.PNG">  
