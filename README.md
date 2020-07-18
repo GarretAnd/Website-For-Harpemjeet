@@ -13,4 +13,3 @@ Proof of this can be shown in the following two photos.
 File started off at 171 KB then shrunk down to 80 Bytes on the page.  
 <img src="src\ss\compproof.PNG">  
 <img src="src\ss\press.PNG">  
->>>>>>> b0697b48b6e2fb7776bf5914c08165ac8a913384
