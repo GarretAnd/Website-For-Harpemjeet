@@ -1,49 +1,29 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Route, NavLink, Switch,
+  BrowserRouter as Router, Route, Switch,
 } from 'react-router-dom';
-import Counter from './counter';
-import Controls from './controls';
 import '../style.scss';
-
-const About = (props) => {
-  return <div> All there is to know about me </div>;
-};
-
-const Welcome = (props) => {
-  return <div>Welcome <Counter /> <Controls /></div>;
-};
-
-const FallBack = (props) => {
-  return <div>URL Not Found</div>;
-};
-
-const Test = (props) => {
-  return <div> ID: {props.match.params.id} </div>;
-};
-
-const Nav = (props) => {
-  return (
-    <nav>
-      <ul>
-        <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/test/id1">test id1</NavLink></li>
-        <li><NavLink to="/test/id2">test id2</NavLink></li>
-      </ul>
-    </nav>
-  );
-};
+import Nav from './nav';
+import FallBack from './fallback';
+import Contact from './contact';
+import Home from './home';
+import What from './what';
+import Who from './who';
+import Lessons from './lessons';
+import Meditation from './meditation';
 
 const App = (props) => {
   return (
     <Router>
-      <div>
+      <div className="app-holder">
         <Nav />
         <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route path="/about" component={About} />
-          <Route exact path="/test/:id" component={Test} />
+          <Route exact path="/" component={Home} />
+          <Route path="/who" component={Who} />
+          <Route path="/what" component={What} />
+          <Route path="/lessons" component={Lessons} />
+          <Route path="/meditation" component={Meditation} />
+          <Route path="/contact" component={Contact} />
           <Route component={FallBack} />
         </Switch>
       </div>
