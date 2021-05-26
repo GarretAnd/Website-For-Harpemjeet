@@ -35,6 +35,18 @@ module.exports = {
         },
       },
       {
+        test: /\.(mp3)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              useRelativePath: true,
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
         test: /\.svg$/, // Worked in collaboration with Jared Cole to get it up and running.
         loader: 'svg-url-loader',
         options: {
@@ -53,18 +65,6 @@ module.exports = {
         // and not duplicate it in rules with them
         enforce: 'pre',
       },
-      /* {
-        test: /\.(jpe?g|png|gif|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              useRelativePath: true,
-              name: '[name].[ext]',
-            },
-          },
-        ],
-      }, */
       {
         test: /\.s?css/,
         use: [

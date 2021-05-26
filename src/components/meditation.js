@@ -1,14 +1,15 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import MedComp from './medComp';
 
 const Meditation = (props) => {
   return (
     <div>
-      <div className="meditation-title">
-        Guided Meditation Recording
+      <div className="lessons-title">
+        Guided Meditations
       </div>
       <div className="meditation-holder">
-        Thingy
+        <MedComp title="Vibrant Heart Meditation" path="VHM" />
       </div>
     </div>
   );

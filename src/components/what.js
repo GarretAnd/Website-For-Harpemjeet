@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import Heart from '../img/soloHeart.svg';
 
 const What = (props) => {
   return (
@@ -20,12 +21,15 @@ const What = (props) => {
         </div>
       </div>
       <div className="what-page-right">
+        <div className="rate-box-title">
+          <span>Rates</span>
+        </div>
         <div className="rate-box">
           <div className="rate-box-text">
             30 Min Consultation:
           </div>
           <div className="rate-box-text-answer">
-            Free
+            <b>Free</b>
           </div>
           <div className="rate-box-text">
             60 Min Session:
@@ -47,7 +51,7 @@ const What = (props) => {
           </div>
         </div>
         <div className="what-page-logo-holder">
-          Logo Here
+          <img src={Heart} alt="heart" />
         </div>
       </div>
     </div>

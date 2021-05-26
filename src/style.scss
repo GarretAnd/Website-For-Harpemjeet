@@ -1,6 +1,6 @@
 body, html {
     font-family: 'Kiwi Maru', serif;
-    background: radial-gradient(circle, rgba(174,238,180,1) 27%, rgba(228,152,51,1) 78%);
+    background: #FFFCF5;
     height: 100vh;
     width: 100vw;
     padding: 0;
@@ -12,16 +12,32 @@ body, html {
     color: pink;
 }
 
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    margin-top: 3vh;
+    margin-left: 10vh;
+}
+
 .header {
+    list-style-type: none;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #B7C3F3;
+    background-color: #FFFCF5;
     margin-top: -1px;
+    text-decoration: none !important;
     width: 100vw;
     height: 10vh;
     padding-bottom: 0px;
-    padding-top: 20px;
+    padding-top: 7vh;
+}
+
+.hide {
+    text-decoration: none;
+    color: black;
 }
 
 .who-text {
@@ -66,4 +82,205 @@ body, html {
     padding-right: 10vw;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.home-header {
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    margin-left: 10vw;
+    line-height: 2vh;
+}
+
+.home-btn {
+    background-color: #71C8B0;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+    padding-top: 10px;
+    font-family: "Montserrat";
+    text-align: center;
+    vertical-align: middle;
+    font-size: 26px;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    cursor: grab;
+}
+
+.home-top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15vh;
+}
+
+.sky-harp {
+    margin-left: 15vw;
+    margin-top: -10vh;
+}
+
+.left-bottom {
+    margin-left: 5vw;
+    margin-bottom: 20px;
+}
+
+.home-bottom {
+    display: flex;
+}
+
+.right-bottom-text {
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+.right-bottom-text-header {
+    font-family: "Montserrat";
+    font-size: 40px;
+    margin-bottom: 10px
+}
+
+.right-bottom-text-holder {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.who-text-title {
+    font-family: "Playfair Display";
+    font-size: 80px;
+    margin-bottom: 5vh;
+}
+
+.who-text {
+    font-family: "Lato";
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.what-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.what-page-title {
+    font-family: "Playfair Display";
+    font-size: 80px;
+    margin-bottom: 5vh;
+}
+
+.what-page-text {
+    font-family: "Lato";
+    font-size: 20px;
+    margin-right: 20vw;
+    font-weight: 200;
+    margin-bottom: 10vh;
+}
+
+.rate-box {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20vw;
+    border-top-style: none;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.rate-box-title {
+    font-family: "Playfair Display";
+    font-size: 80px;
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin-left: 10px 0 20px; 
+    margin-right: 10px 0 20px;
+}
+
+.rate-box-title span { 
+    padding:0 10px; 
+    background-color: #FFFCF5;
+}
+
+.rate-box-text-answer {
+    margin-bottom: 5vh;
+}
+
+.what-page-logo-holder {
+    margin-top: 300px;
+    margin-left: 0vw;
+}
+
+.lessons-title {
+    font-family: "Playfair Display";
+    font-size: 80px;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.lessons-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.lesson-title-box {
+    background-color: #71C8B0;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+    margin-top: 5vh;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Montserrat";
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 26px;
+    cursor: grab;
+    margin-bottom: 5vh;
+}
+
+.lesson-title-expanded {
+    margin-top: 5vh;
+    padding-top: 10px;
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    cursor: grab;
+}
+
+.lesson-text {
+    width: 80vw;
+    padding: 10px;
+}
+
+.lesson-text-box-expanded {
+    margin: 5vh;
+    background-color: #71C8B0;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.med-comp-box {
+    border-style: solid;
+    border-width: 1px;
+    height: 10vh;
+    display: flex;
+    width: 20%;
+}
+
+.med-comp-title {
+    padding-left: 10px;
+    padding-right: 10px;
 }

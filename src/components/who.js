@@ -1,13 +1,13 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import Body from '../img/body.jpg';
+import LogoCircle from '../img/harpLogoCircle.png';
 
 const Who = (props) => {
   return (
     <div className="who-page">
       <div className="Body-holder">
-        <img src={Body} alt="Body" className="Body-shot" />
+        <img src={LogoCircle} alt="Body" className="Body-shot" />
       </div>
       <div className="who-text-holder">
         <div className="who-text-title">

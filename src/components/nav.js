@@ -1,19 +1,20 @@
 import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
+import Logo from '../img/editedLogo.png';
 
 const Nav = (props) => {
   return (
-    <nav>
+    <nav className="nav-bar">
       <div className="header-img">
-        Logo
+        <img src={Logo} alt="Logo" className="Logo-Holder" />
       </div>
       <ul className="header">
-        <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/who">About Harp</NavLink></li>
-        <li><NavLink to="/what">About Vibrant Heart Coaching</NavLink></li>
-        <li><NavLink to="/lessons">Vibrant Heart Lessons</NavLink></li>
-        <li><NavLink to="/meditation">Guided Meditation</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/" exact className="hide">Home</NavLink></li>
+        <li><NavLink to="/who" className="hide">About Harp</NavLink></li>
+        <li><NavLink to="/what" className="hide">About Vibrant Heart Coaching</NavLink></li>
+        <li><NavLink to="/lessons" className="hide">Vibrant Heart Lessons</NavLink></li>
+        <li><NavLink to="/meditation" className="hide">Guided Meditation</NavLink></li>
+        <li><NavLink to="/contact" className="hide">Contact</NavLink></li>
       </ul>
     </nav>
   );
