@@ -272,15 +272,197 @@ body, html {
     cursor: grab;
 }
 
-.med-comp-box {
-    border-style: solid;
-    border-width: 1px;
-    height: 10vh;
-    display: flex;
-    width: 20%;
-}
-
 .med-comp-title {
     padding-left: 10px;
     padding-right: 10px;
+    vertical-align: text-top;
+}
+
+.med-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meditation-holder {
+    margin-top: 5vh;
+    
+}
+
+
+.med-comp-box {
+    margin: 20px;
+    border-style: solid;
+    border-width: 1px;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 2vh;
+    margin-right: 5px;
+    width: 100%;
+}
+
+.contact-box {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: #000 5px;
+    outline: 1px solid black;
+    width: 80vw;
+    margin-bottom: 5vh;
+}
+
+.contact-rows {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 10vw;
+}
+
+.contact-title {
+    font-family: 'Playfair Display';
+    font-size: 80px;
+    text-align: left;
+}
+
+.contact-buttons {
+    width: 80vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 33px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.FN-box {
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+}
+
+.Email-Box {
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+}
+
+.LN-box {
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+}
+
+.Phone-Box {
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+}
+
+.left-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.AD {
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Contact-Msg {
+    outline: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+input[type=text], input[type=textarea] select {
+    width: 100%;
+    padding: 12px 20px;
+    background: #FFFCF5;
+    margin: 1px 0;
+    font-family: 'Kiwi Maru', serif;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 10vh;
+    background: #FFFCF5;
+    margin: 1px 0;
+    font-family: 'Kiwi Maru', serif;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.phone-sec {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+.email-sec {
+    display: flex;
+    width: 20vw;
+    flex-direction: row;
+}
+
+.limit {
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-text {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.contact-button { 
+    background-color: #71C8B0;
+    width: 20vw;
+    height: 5vh;
+    font-size: 26px;
+    font-family: 'Montserrat';
+    padding-top: 2vh;
+    margin-left: 30vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+
+.contact-button:hover { 
+    background-color: #36ebbb;
+    width: 20vw;
+    height: 5vh;
+    font-size: 26px;
+    font-family: 'Montserrat';
+    padding-top: 2vh;
+    margin-left: 30vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    border-radius: 5px;
 }
