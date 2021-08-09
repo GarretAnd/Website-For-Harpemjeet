@@ -22,7 +22,7 @@ class Contact extends Component {
   }
 
   phoneTab = () => {
-    alert('Please Call us at: '); // Fill in Phone Number and Email Address
+    alert('Please Call us at: (310)869-2946 '); // Fill in Phone Number and Email Address
   }
 
   sendEmail = () => {
@@ -41,7 +41,7 @@ class Contact extends Component {
           ${this.state.ad}
         `;
       body = encodeURIComponent(body);
-      window.location.href = `mailto:email_goes_here?cc=${this.state.email}&body=${body}&subject=Vibrant Heart Question`;
+      window.location.href = `mailto:vibrantheartcoaching@gmail.com?cc=${this.state.email}&body=${body}&subject=Vibrant Heart Question`;
       alert('Your email has been successfully generated. Please use your native email client to send the message!');
     }
   }

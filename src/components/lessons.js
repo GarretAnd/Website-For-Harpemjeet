@@ -20,7 +20,7 @@ const Lessons = (props) => {
         <LessonComp title="The Discipline to be a Free Spirit" text={Discipline} />
         <LessonComp title="Kambo" text={Kam} />
         <LessonComp title="Shared Humanity" text={Human} />
-        <LessonComp title="The Buddha in your Backyard" text={Bhudda} />
+        <LessonComp title="The Buddha in Your Backyard" text={Bhudda} />
       </div>
     </div>
   );

@@ -10,6 +10,7 @@
     "test": "eslint src/**.js",
     "winbuild": "yarn clean & SET NODE_ENV=production& webpack --colors",
     "clean": "rimraf dist",
+    "build": "yarn winbuild & cp CNAME dist/CNAME & surge dist & yarn clean",
     "windeploy": "yarn winbuild & surge -p dist -d Garrets-starterpack.surge.sh & yarn clean"
   },
   "devDependencies": {
@@ -49,6 +50,7 @@
     "is-svg": "4.2.2",
     "jquery": "^3.5.1",
     "lodash.debounce": "^4.0.8",
+    "plotly": "^1.0.6",
     "raw-loader": "^4.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

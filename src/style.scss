@@ -66,7 +66,9 @@ body, html {
     font-weight: 600;
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 5vh;
+    height: 100vh;
 }
 
 .Sec-Title {
@@ -104,6 +106,7 @@ body, html {
     margin-top: 5vh;
     margin-left: 10vw;
     cursor: grab;
+    margin-bottom: 2vh;
 }
 
 .home-top {
@@ -129,6 +132,7 @@ body, html {
 .right-bottom-text {
     font-family: "Montserrat";
     font-size: 20px;
+    line-height: 2;
 }
 
 .right-bottom-text-header {
@@ -142,6 +146,7 @@ body, html {
     padding-right: 10vw;
 }
 
+
 .who-text-title {
     font-family: "Playfair Display";
     font-size: 80px;
@@ -152,6 +157,8 @@ body, html {
     font-family: "Lato";
     font-weight: 200;
     font-size: 20px;
+    line-height: 2;
+    font-weight: bold;
 }
 
 .what-page {
@@ -172,7 +179,8 @@ body, html {
     font-family: "Lato";
     font-size: 20px;
     margin-right: 20vw;
-    font-weight: 200;
+    font-weight: bold;
+    line-height: 2;
     margin-bottom: 10vh;
 }
 
@@ -233,7 +241,7 @@ body, html {
 }
 
 .lesson-title-box {
-    background-color: #71C8B0;
+    background-color: #aceedb;
     border-radius: 10px;
     width: 350px;
     height: 50px;
@@ -263,11 +271,14 @@ body, html {
 .lesson-text {
     width: 80vw;
     padding: 10px;
+    font-size: 19px;
+    line-height: 2;
+    white-space: pre-wrap;
 }
 
 .lesson-text-box-expanded {
     margin: 5vh;
-    background-color: #71C8B0;
+    background-color: #aceedb;
     border-radius: 10px;
     cursor: grab;
 }
