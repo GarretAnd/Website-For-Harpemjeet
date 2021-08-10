@@ -35,19 +35,19 @@ const What = (props) => {
             60 Min Session:
           </div>
           <div className="rate-box-text-answer">
-            $75.00
+            $100
           </div>
           <div className="rate-box-text">
-            5 x 60 Min Sessions:
+            Pack of five 60 Min Sessions:
           </div>
           <div className="rate-box-text-answer">
-            $350.00
+            $450.00
           </div>
           <div className="rate-box-text">
-            10 x 60 Min Sessions:
+            Pack of ten 60 Min Sessions:
           </div>
           <div className="rate-box-text-answer">
-            $650.00
+            $800.00
           </div>
         </div>
         <div className="what-page-logo-holder">

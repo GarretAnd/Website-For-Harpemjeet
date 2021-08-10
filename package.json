@@ -50,6 +50,7 @@
     "is-svg": "4.2.2",
     "jquery": "^3.5.1",
     "lodash.debounce": "^4.0.8",
+    "openssl": "^1.1.0",
     "plotly": "^1.0.6",
     "raw-loader": "^4.0.2",
     "react": "^16.13.1",
